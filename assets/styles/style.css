@@ -677,6 +677,21 @@ span {
 .box-c {
     will-change: transform;
 }
+.not-found canvas {
+    height: 446px;
+}
+.not-found .banner {
+    margin-top: 35px;
+    margin-bottom: 85px;
+
+}
+.not-found h2 {
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    line-height: 85px;
+    letter-spacing: 15px;
+}
 @media(min-width: 1366px) {
     .contact-container {
         max-width: -webkit-fill-available;
@@ -704,8 +719,14 @@ span {
         width: 200px;
     }
     .big-title {
-        font-size: 170px;
-        line-height: 170px;
+        font-size: 90px;
+        line-height: 90px;
+    }
+    .multiple-items {
+        margin-left: 16px;
+    }
+    .contact .left {
+        padding: 16px;
     }
     /*.cursor {*/
     /*    display: none;*/
