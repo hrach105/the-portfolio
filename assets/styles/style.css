@@ -14,9 +14,15 @@ body {
     padding: 0;
     font-family: 'Prompt', sans-serif;
 }
+.service-page-wrapper header {
+    padding: 16px;
+}
 .error-message {
     color: red;
     margin-top: 8px;
+}
+.cursor:hover {
+    background-color: red;
 }
 .field {
     position: relative;
@@ -104,7 +110,9 @@ hr {
 }
 .close-menu {
     display: none;
+    cursor: pointer;
 }
+
 header {
     display: flex;
     align-items: center;
@@ -364,6 +372,9 @@ svg.rotate {
 }
 .slider-item-bottom {
     min-height: 214px;
+}
+.slider-item-top {
+    max-width: 240px;
 }
 .slider-item-bottom p {
     color: white;
