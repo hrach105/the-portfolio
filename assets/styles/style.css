@@ -339,8 +339,8 @@ header {
 /*    margin: 0 -16.5px;*/
 /*}*/
 .multiple-items {
-    /*max-width: 1280px;*/
     margin-left: 44px;
+    margin-top: -48px;
 }
 .praise-corner {
     margin-bottom: 152px;
@@ -359,6 +359,7 @@ svg.rotate {
     flex-direction: column;
     justify-content: space-between;
     min-height: 537px;
+    background-color: black;
     margin: 0 16.5px;
 }
 .slider-item .slider-img {
@@ -411,6 +412,7 @@ svg.rotate {
     bottom: -83px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 .slick-prev {
     right: 50px;
@@ -726,6 +728,10 @@ span {
     }
 }
 @media(max-width: 1025px) {
+    .multiple-items {
+        margin-top: 0;
+    }
+
     .big-title {
         letter-spacing: 17px;
     }
@@ -804,7 +810,7 @@ span {
         padding: 16px;
     }
     header {
-        padding: 16px;
+        padding:16px 0
     }
 
     .heading-wrapper {
