@@ -1,14 +1,17 @@
 body {
     margin: 0;
     background-color: black;
-    scroll-behavior: smooth;
-    overscroll-behavior: none;
+    /*overscroll-behavior: none;*/
     margin: 0;
     padding: 0;
-    /*overflow-x: hidden;*/
+    transition: .5s;
 }
-
+/*section {*/
+/*    height: 100vh*/
+/*}*/
 * {
+    scroll-behavior: smooth !important;
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -692,15 +695,14 @@ span {
 #smooth-content {
     overflow: visible;
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, .07) 2px, transparent 2px), linear-gradient(90deg, rgba(255, 255, 255, .07) 2px, transparent 2px), linear-gradient(rgba(255, 255, 255, .06) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .06) 1px, transparent 1px);
-    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    /*background-image: linear-gradient(rgba(255, 255, 255, .07) 2px, transparent 2px), linear-gradient(90deg, rgba(255, 255, 255, .07) 2px, transparent 2px), linear-gradient(rgba(255, 255, 255, .06) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .06) 1px, transparent 1px);*/
+    /*background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;*/
     background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
 .service-page {
     width: 100%;
 }
 .box {
-
     z-index: 100;
     will-change: transform;
 }
@@ -722,6 +724,12 @@ span {
     line-height: 85px;
     letter-spacing: 15px;
 }
+
+
+
+
+
+
 @media(min-width: 1366px) {
     .contact-container {
         max-width: -webkit-fill-available;

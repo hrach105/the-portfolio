@@ -63,6 +63,7 @@ $('.close-menu').click(function () {
 setTimeout(()=>{
     $('.loading').fadeOut()
 },1000)
+AOS.init();
 $(document).ready(function() {
     $("#submitButton").click(function(e) {
         e.preventDefault()
@@ -441,6 +442,7 @@ canvas.onpointerout = (e) => {
     link.forEach((b) => b.addEventListener('mouseleave', animateit))
     window.addEventListener('mousemove', editCursor)
 })()
+
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 ScrollTrigger.normalizeScroll(true)
