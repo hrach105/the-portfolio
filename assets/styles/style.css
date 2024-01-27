@@ -231,10 +231,12 @@ header {
 }
 .image-grid {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 100px;
     width: 100%;
     position: relative;
-    height: 100vh;
+    margin-bottom: 108px;
+    margin-top: -36px;
 }
 .image-card {
     position: relative;
@@ -245,6 +247,17 @@ header {
     transition: border-radius 0.75s cubic-bezier(0.65, 0, 0.35, 1);
     overflow: hidden;
     cursor: pointer;
+    max-width: max-content;
+}
+.left-images-block {
+    display: flex;
+    flex-direction: column;
+    gap: 147px;
+    max-width: 60%;
+    width: 100%;
+}
+.left-images-block .image-card:first-child {
+    align-self: flex-end;
 }
 .image-card:hover {
     border-radius: 100px;
@@ -284,9 +297,13 @@ header {
 .image-card:hover img {
     filter: grayscale(40%);
 }
-
+.tashir {
+    max-width: 32%;
+    width: 100%;
+    justify-content: end;
+}
 .loks img {
-    width: 376px;
+    width: 373px;
     height: 386px;
 }
 .rearmenia img {
@@ -300,22 +317,22 @@ header {
 
 
 
-.loks,.tashir, .rearmenia {
-    position: absolute;
-}
-.loks{
-    left: 25%;
-    top: -35px;
-}
-.tashir {
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
-.rearmenia {
-    bottom: 108px;
-    left: 8%;
-}
+/*.loks,.tashir, .rearmenia {*/
+/*    position: absolute;*/
+/*}*/
+/*.loks{*/
+/*    left: 25%;*/
+/*    top: -35px;*/
+/*}*/
+/*.tashir {*/
+/*    top: 50%;*/
+/*    right: 0;*/
+/*    transform: translateY(-50%);*/
+/*}*/
+/*.rearmenia {*/
+/*    bottom: 108px;*/
+/*    left: 8%;*/
+/*}*/
 
 
 /*.slick-list {*/
@@ -709,15 +726,33 @@ span {
     }
 }
 @media(max-width: 1025px) {
-    .loks, .tashir, .rearmenia {
-        position: static;
-        transform: none;
+    .big-title {
+        letter-spacing: 17px;
+    }
+    .tashir {
+        max-width: 100%;
+        justify-content: center;
+    }
+    .image-grid img {
+        width: 100%;
+        height: 300px;
     }
     .image-grid {
         gap: 12px;
         height: auto;
         padding-bottom: 30px;
         justify-content: center;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    .left-images-block .image-card:first-child {
+        align-self: center;
+    }
+    .left-images-block {
+        gap: 12px;
+        max-width: 100%;
+        align-items: center;
     }
     .rearmenia img {
         width: 100%;
@@ -728,6 +763,9 @@ span {
     }
     .slider-item .slider-img {
         width: 200px;
+    }
+    .slider-item {
+        min-height: 509px !important;
     }
     .big-title {
         font-size: 90px;
@@ -744,14 +782,14 @@ span {
     /*}*/
 }
 @media(max-height: 768px) {
-    .rearmenia img {
-        width: 335px;
-        height: 274px;
-    }
-    .loks img {
-        width: 410px;
-        height: 280px;
-    }
+    /*.rearmenia img {*/
+    /*    width: 335px;*/
+    /*    height: 274px;*/
+    /*}*/
+    /*.loks img {*/
+    /*    width: 410px;*/
+    /*    height: 280px;*/
+    /*}*/
 }
 @media(max-width: 768px) {
     .slider-item .slider-img {
