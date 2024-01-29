@@ -1,3 +1,9 @@
+$(document).ready(function() {
+    setTimeout(function() {
+        $('.loading').hide();
+    }, 5000);
+});
+
 $('.multiple-items').slick({
     infinite: false,
     slidesToShow: 2.12,
@@ -68,9 +74,7 @@ $('.overlay').click(function () {
     $('.menu').fadeOut()
     $('.overlay').fadeOut()
 })
-// setTimeout(()=>{
-//     $('.loading').fadeOut()
-// },2000)
+
 AOS.init();
 $(document).ready(function() {
     $("#submitButton").click(function(e) {
