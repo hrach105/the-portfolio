@@ -5,7 +5,16 @@ body {
     margin: 0;
     padding: 0;
     transition: .5s;
+  
+}
+body.home {
     cursor: none;
+}
+.service-page-wrapper .burger {
+    cursor: pointer;
+}
+.service-page-wrapper .close-menu {
+    cursor: pointer;
 }
 /*section {*/
 /*    height: 100vh*/
@@ -627,37 +636,8 @@ footer p {
 
 
 
-.strokeme {
-    font-size: 56px;
-    color: transparent;
-    -webkit-text-stroke: 1px white;
-}
 
-.strokeme:hover,
-.strokeme:focus {
-    color: white;
-    transition: 0.01s;
-}
-
-/** Cursor */
-
-.hover-this {
-    transition: all 0.4s ease;
-}
-
-.cursor {
-    pointer-events: none;
-    position: fixed;
-    padding: 0.3rem;
-    background-color: #fff;
-    border-radius: 50%;
-    mix-blend-mode: difference;
-    transition: transform 0.3s ease;
-}
-
-.hover-this:hover ~ .cursor {
-    transform: translate(-50%, -50%) scale(8);
-}
+  
 
 
 
@@ -990,3 +970,39 @@ footer p {
         padding: 0 ;
     } */
 }
+
+
+
+
+
+
+/* .strokeme {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+  }
+  
+  .strokeme:hover,
+  .strokeme:focus {
+    color: white;
+    transition: 0.01s;
+  }
+  
+  /** Cursor */
+  
+  .hover-this {
+    transition: all 0.4s ease;
+  }
+  
+  .cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 0.3rem;
+    background-color: #fff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-this:hover ~ .cursor {
+    transform: translate(-50%, -50%) scale(8);
+  } */
