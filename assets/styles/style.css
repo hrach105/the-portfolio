@@ -17,6 +17,16 @@ body {
     padding: 0;
     font-family: 'Prompt', sans-serif;
 }
+.overlay {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    background-color: #080808b3;
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+}
 .service-page-wrapper header {
     padding: 16px;
 }
@@ -83,6 +93,7 @@ hr {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
 }
 .burger {
     cursor: pointer;
@@ -114,6 +125,7 @@ hr {
 .close-menu {
     display: none;
     cursor: pointer;
+    z-index: 2;
 }
 
 header {
@@ -726,7 +738,17 @@ span {
 }
 
 
-
+.green {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #FF451D;
+    z-index: 999;
+    opacity: 0;
+    will-change: transform;
+  }
 
 
 

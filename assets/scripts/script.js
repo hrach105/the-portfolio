@@ -54,15 +54,23 @@ $('.burger').click(function () {
     $(this).hide();
     $('.close-menu').show()
     $('.menu').fadeIn()
+    $('.overlay').fadeIn()
 })
 $('.close-menu').click(function () {
     $(this).hide();
     $('.burger').show()
     $('.menu').fadeOut()
+    $('.overlay').fadeOut()
+})
+$('.overlay').click(function () {
+    $(this).fadeIn();
+    $('.burger').show()
+    $('.menu').fadeOut()
+    $('.overlay').fadeOut()
 })
 setTimeout(()=>{
     $('.loading').fadeOut()
-},1000)
+},300)
 AOS.init();
 $(document).ready(function() {
     $("#submitButton").click(function(e) {
@@ -452,3 +460,47 @@ let smoother = ScrollSmoother.create({
     smooth: 2,
     effects: true,
 });
+
+
+
+
+
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+// create the scrollSmoother before your scrollTriggers
+gsap.registerPlugin(ScrollTrigger);
+let intro = gsap.timeline({
+    onComplete: () => {
+      smoother.paused(false);
+      gsap.set(".heading", { overflow: "visible" });
+    }
+  });
+  gsap.set(".green", { opacity: 1, scaleX: 0, scaleY: 0.005 });
+
+intro.to(".green", {
+    scaleX: 1,
+    ease: "expo.out",
+    transformOrigin: "center center"
+  })
+  .to(".green", {
+    scaleY: 1,
+    duration: 0.8,
+    ease: "expo.out",
+    transformOrigin: "center center"
+  })
+  .set("#smooth-content", { autoAlpha: 1 })
+  .to(".green", {
+    scaleY: 0,
+    ease: "sine.out",
+    transformOrigin: "top center"
+  })
+
+
+
+
+
+
+
+
