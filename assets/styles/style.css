@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     transition: .5s;
+    cursor: none;
 }
 /*section {*/
 /*    height: 100vh*/
@@ -95,9 +96,7 @@ hr {
     transform: translateX(-50%);
     z-index: 2;
 }
-.burger {
-    cursor: pointer;
-}
+
 .menu .menu-item {
     font-size: 56px;
     line-height: 84px;
@@ -124,7 +123,6 @@ hr {
 }
 .close-menu {
     display: none;
-    cursor: pointer;
     z-index: 2;
 }
 
@@ -261,7 +259,6 @@ header {
     border-radius: 0;
     transition: border-radius 0.75s cubic-bezier(0.65, 0, 0.35, 1);
     overflow: hidden;
-    cursor: pointer;
     max-width: max-content;
 }
 .left-images-block {
@@ -437,7 +434,6 @@ svg.rotate {
     bottom: -83px;
     background-color: transparent;
     border: none;
-    cursor: pointer;
 }
 .slick-prev {
     right: 50px;
@@ -496,7 +492,6 @@ form button {
     line-height: 24px;
     font-weight: 400;
     padding: 12px 48px;
-    cursor:pointer;
 }
 .contact-wrapper {
     display: flex;
