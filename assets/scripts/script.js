@@ -73,6 +73,7 @@ $('.overlay').click(function () {
     $('.burger').show()
     $('.menu').fadeOut()
     $('.overlay').fadeOut()
+    $('.close-menu').hide()
 })
 
 AOS.init();
