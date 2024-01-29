@@ -977,11 +977,11 @@ footer p {
         margin: auto;
         padding: 0 10px;
     }
-    .main-container.canvas-container {
+    /* .main-container.canvas-container {
         max-width: 1188px;
         margin: auto;
         padding: 0 10px;
-    }
+    } */
 }
 @media(max-width:1280px) {
     .main-container.contact-section {
@@ -989,9 +989,9 @@ footer p {
         margin: auto;
         padding: 0 ;
     }
-    .main-container.canvas-container {
+    /* .main-container.canvas-container {
         max-width: 100%;
         margin: auto;
         padding: 0 ;
-    }
+    } */
 }
