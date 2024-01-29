@@ -353,8 +353,18 @@ header {
 /*.slick-list {*/
 /*    margin: 0 -16.5px;*/
 /*}*/
+.slider-container-wrapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+}
+.slider-container {
+    max-width: 1188px;
+    width: 100%;
+    margin-left: auto;
+}
 .multiple-items {
-    margin-left: 44px;
+    margin-left: 0;
     margin-top: -48px;
 }
 .praise-corner {
