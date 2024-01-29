@@ -971,3 +971,17 @@ footer p {
         margin-bottom: 12px
     }
 }
+@media(min-width:1280px) {
+    .main-container.contact-section {
+        max-width: 1188px;
+        margin: auto;
+        padding: 0 10px;
+    }
+}
+@media(max-width:1280px) {
+    .main-container.contact-section {
+        max-width: 100%;
+        margin: auto;
+        padding: 0 ;
+    }
+}
