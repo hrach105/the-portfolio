@@ -1,7 +1,7 @@
 $(document).ready(function() {
     setTimeout(function() {
         $('.loading').hide();
-    }, 5000);
+    }, 200);
 });
 
 $('.multiple-items').slick({

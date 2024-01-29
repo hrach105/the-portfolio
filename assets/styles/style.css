@@ -614,18 +614,13 @@ footer p {
 @keyframes blur-text {
     0% {
         filter: blur(0px);
-    }
+   }
     100% {
         filter: blur(4px);
-    }
+   }
 }
 
 
-span {
-    display: inline-block;
-    pointer-events: none;
-    transition: transform 0.1s linear;
-}
 
 .strokeme {
     font-size: 56px;
