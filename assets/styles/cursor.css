@@ -1,0 +1,32 @@
+.strokeme {
+    font-size: 5rem;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.strokeme:hover,
+.strokeme:focus {
+    color: white;
+    transition: 0.01s;
+}
+
+/** Cursor */
+
+.hover-this {
+    transition: all 0.4s ease;
+}
+
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 0.3rem;
+    background-color: #fff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
+    z-index: 99999;
+}
+
+.hover-this:hover ~ .cursor {
+    transform: translate(-50%, -50%) scale(8);
+}

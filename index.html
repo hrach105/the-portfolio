@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="./assets/styles/cursor.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/style.css">
@@ -27,7 +27,7 @@
             <span class="loading-text-words">G</span>
         </div>
     </div>
-    <div class="cursor"></div>
+<!--    <div class="cursor"></div>-->
   
     <div class="socials">
         
@@ -68,20 +68,20 @@
     <div class="overlay"></div>
     <div class="menu">
         <div class="menu-wrapper">
-            <a class="strokeme hover-this" href="#about">ABOUT</a>
-            <a class="strokeme hover-this" href="#case_studies">CASE STUDIES</a>
-            <a class="strokeme hover-this" href="#contact">CONTACT ME</a>
+            <a class="" href="#about">ABOUT</a>
+            <a class="" href="#case_studies">CASE STUDIES</a>
+            <a class="" href="#contact">CONTACT ME</a>
         </div>
     </div>
 
 </div>
     <div class="main-container">
         <div class="heading-wrapper">
-          <div class="">
-  <h1 class="">Experiencing the art of bringing pixels to life</h1>
-</div>
-<div class="cursor"></div>
-                <p>changing stories by crafting unique  websites</p>
+            <div class="hover-this">
+                <h1 href="#" class="hover-this strokeme"><span>Experiencing the artof bringing pixels to life</span></h1>
+                <div class="cursor"></div>
+            </div>
+            <p>changing stories by crafting unique  websites</p>
         </div>
     </div>
     <section class="banner">
@@ -270,5 +270,32 @@
 <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
 <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./assets/scripts/cursor.js"></script>
 <script src="./assets/scripts/script.js"></script>
+<script>
+    ;(function() {
+        const link = document.querySelectorAll('.hover-this')
+        const cursor = document.querySelector('.cursor')
+        const animateit = function(e) {
+            const span = this.querySelector('span')
+            const { offsetX: x, offsetY: y } = e,
+                { offsetWidth: width, offsetHeight: height } = this,
+                move = 25,
+                xMove = x / width * (move * 2) - move,
+                yMove = y / height * (move * 2) - move
+
+            span.style.transform = `translate(${xMove}px, ${yMove}px)`
+
+            if (e.type === 'mouseleave') span.style.transform = ''
+        }
+        const editCursor = (e) => {
+            const { clientX: x, clientY: y } = e
+            cursor.style.left = x + 'px'
+            cursor.style.top = y + 'px'
+        }
+        link.forEach((b) => b.addEventListener('mousemove', animateit))
+        link.forEach((b) => b.addEventListener('mouseleave', animateit))
+        window.addEventListener('mousemove', editCursor)
+    })()
+</script>
 </html>

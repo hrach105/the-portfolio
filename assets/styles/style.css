@@ -7,6 +7,9 @@ body {
     transition: .5s;
   
 }
+body.home .menu-wrapper a {
+    cursor: none;
+}
 body.home {
     cursor: none;
 }
@@ -129,6 +132,14 @@ hr {
 }
 .menu-wrapper a {
     text-decoration: none;
+    -webkit-text-stroke-color:white;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
 }
 .close-menu {
     display: none;
@@ -154,6 +165,7 @@ header {
     line-height: 56px;
     color: #DCDCDC;
     font-weight: 700;
+
 }
 .heading-wrapper p {
     max-width: 213px;
@@ -398,6 +410,9 @@ svg.rotate {
     position: absolute;
     right: 0;
     top: 0;
+}
+.slider-item:last-child {
+    margin-right: 0;
 }
 .slider-item .profession{
     color: #FF451D;
@@ -725,7 +740,7 @@ footer p {
     top: 0;
     left: 0;
     background-color: #FF451D;
-    z-index: 999;
+    z-index: 999999999;
     opacity: 0;
     will-change: transform;
   }
@@ -976,33 +991,3 @@ footer p {
 
 
 
-/* .strokeme {
-    color: transparent;
-    -webkit-text-stroke: 1px white;
-  }
-  
-  .strokeme:hover,
-  .strokeme:focus {
-    color: white;
-    transition: 0.01s;
-  }
-  
-  /** Cursor */
-  
-  .hover-this {
-    transition: all 0.4s ease;
-  }
-  
-  .cursor {
-    pointer-events: none;
-    position: fixed;
-    padding: 0.3rem;
-    background-color: #fff;
-    border-radius: 50%;
-    mix-blend-mode: difference;
-    transition: transform 0.3s ease;
-  }
-  
-  .hover-this:hover ~ .cursor {
-    transform: translate(-50%, -50%) scale(8);
-  } */
