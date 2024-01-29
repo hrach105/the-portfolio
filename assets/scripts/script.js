@@ -68,9 +68,9 @@ $('.overlay').click(function () {
     $('.menu').fadeOut()
     $('.overlay').fadeOut()
 })
-setTimeout(()=>{
-    $('.loading').fadeOut()
-},300)
+// setTimeout(()=>{
+//     $('.loading').fadeOut()
+// },2000)
 AOS.init();
 $(document).ready(function() {
     $("#submitButton").click(function(e) {
@@ -451,15 +451,15 @@ canvas.onpointerout = (e) => {
     window.addEventListener('mousemove', editCursor)
 })()
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-ScrollTrigger.normalizeScroll(true)
+// ScrollTrigger.normalizeScroll(true)
 
-// create the smooth scroller FIRST!
-let smoother = ScrollSmoother.create({
-    smooth: 2,
-    effects: true,
-});
+// // create the smooth scroller FIRST!
+// let smoother = ScrollSmoother.create({
+//     smooth: 2,
+//     effects: true,
+// });
 
 
 
@@ -468,18 +468,11 @@ let smoother = ScrollSmoother.create({
 
 
 gsap.registerPlugin(ScrollTrigger);
-
-// create the scrollSmoother before your scrollTriggers
-gsap.registerPlugin(ScrollTrigger);
-let intro = gsap.timeline({
-    onComplete: () => {
-      smoother.paused(false);
-      gsap.set(".heading", { overflow: "visible" });
-    }
-  });
-  gsap.set(".green", { opacity: 1, scaleX: 0, scaleY: 0.005 });
-
-intro.to(".green", {
+const cont = document.querySelector("#container");
+gsap.set(".green", { opacity: 1, scaleX: 0, scaleY: 0.005 });
+let intro = gsap.timeline();
+intro
+  .to(".green", {
     scaleX: 1,
     ease: "expo.out",
     transformOrigin: "center center"
