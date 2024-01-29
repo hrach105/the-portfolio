@@ -3,7 +3,12 @@ $(document).ready(function() {
         $('.loading').hide();
     }, 200);
 });
-
+$('.menu-wrapper a').click(function (){
+    $('.overlay').fadeOut()
+    $('.menu').fadeOut()
+    $('.close-menu').hide()
+    $('.burger').show()
+})
 $('.multiple-items').slick({
     infinite: false,
     slidesToShow: 2.12,

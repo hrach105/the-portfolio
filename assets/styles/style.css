@@ -952,6 +952,14 @@ footer p {
         font-size: 16px;
     }
 }
+@media(max-width: 720px) {
+  .cursor {
+      display: none;
+  }
+    .menu-wrapper a {
+        font-size: 32px;
+    }
+}
 @media(max-width: 450px) {
     .slider-item .slider-img {
         width: 130px;
