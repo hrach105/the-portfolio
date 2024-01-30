@@ -68,6 +68,7 @@ body.home {
     cursor: text;
     transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
     background-color: black;
+    pointer-events: none;
 }
 .socials {
     width: 48px;
